@@ -1,0 +1,20 @@
+language: python
+python:
+  - 3.5
+  - 3.6
+before_install:
+  - python --version
+  - pip install -U pip
+  - pip install -U pytest
+  - pip install codecov
+  - pip install flask
+  - pip install pytest pytest-cov
+install:
+  - pip install -r requirements.txt
+script: 
+  - python .py  # run tests
+  
+after_success:
+  - coverage run pythonstartup.py
+  - pytest --cov=./
+  - codecov # submit coverage

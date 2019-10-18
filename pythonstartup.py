@@ -1,5 +1,4 @@
 import pandas as pd
-from flask import Flask, request, jsonify, render_template
 
 rating_col = ['user_id', 'coffee_id', 'rating']
 ratings = pd.read_csv(r'''data.csv''', names=rating_col, usecols=range(3), encoding="ISO-8859-1")

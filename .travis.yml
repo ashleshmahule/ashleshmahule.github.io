@@ -12,7 +12,7 @@ before_install:
 install:
   - pip install -r requirements.txt
 script: 
-  - python .py  # run tests
+  - python pythonstartup.py  # run tests
   
 after_success:
   - coverage run pythonstartup.py

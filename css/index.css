@@ -1,0 +1,214 @@
+html {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.totalcontainer {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container1 {
+    transform: scaleX(1.11);
+}
+
+.container2 {
+    transform: scaleX(1.25);
+}
+
+.layer-1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fed8c1;
+}
+
+.layer-2 {
+    background: url("../img/lay2.svg") no-repeat center center fixed;
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.layer-3 {
+    background: url("../img/lay3.svg") no-repeat center center fixed;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+}
+
+.layer-4 {
+    background: url("../img/lay4.svg") no-repeat center center fixed;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
+}
+
+.layer-5 {
+    background: url("../img/lay5.svg") no-repeat center center fixed;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.55s both;
+}
+
+.layer-6 {
+    background: url("../img/lay6.svg") no-repeat center center fixed;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.75s both;
+}
+
+.layer-7 {
+    background: url("../img/lay7.svg") no-repeat center center fixed;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.85s both;
+}
+
+.layer-8 {
+    background: url("../img/lay8.svg") no-repeat center center fixed;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s both;
+}
+
+.laya-please {
+    position: absolute;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0px;
+}
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.main-container {
+    transform: scaleX(0.75);
+}
+
+h1 {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0 auto;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    justify-content: center;
+    background-color: darken(#252B37, 4%);
+}
+
+@mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
+    &:after {
+        position: absolute;
+        content: "";
+        top: $y;
+        left: $x;
+        right: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        transform: scale($size);
+        -webkit-filter: blur($spread);
+        -moz-filter: blur($spread);
+        -ms-filter: blur($spread);
+        filter: blur($spread);
+        background: linear-gradient(270deg, $colorA, $colorB);
+        background-size: 200% 200%;
+        animation: animateGlow $duration ease infinite;
+
+        @keyframes animateGlow {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.projects {
+
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}

@@ -64,3 +64,18 @@ var i;
 for (i = 0; i < elements.length; i++) {
   elements[i].style.flex = "15%";
 }
+
+
+$(document).ready(function () {
+  $('.Showcase').slick({
+    infinite: true,
+    dots: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true,
+    adaptiveHeight: true,
+    nextArrow: `<button class="slick-next slick-arrow" aria-label="Next" type="button" ><i class="fas fa-arrow-right"></i></button>`,
+    prevArrow: `<button class="slick-prev slick-arrow" aria-label="Previous" type="button" ><i class="fas fa-arrow-left"></i></button>`
+  });
+});

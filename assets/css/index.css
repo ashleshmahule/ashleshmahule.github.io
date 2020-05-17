@@ -17,7 +17,7 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    position:absolute;
+    position: absolute;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -33,9 +33,6 @@ body {
 }
 
 .layer-1 {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: fixed;
     height: 100%;
     width: 100%;
     background-color: #fed8c1;
@@ -46,7 +43,7 @@ body {
     animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: fixed;
+    background-position: center;
 }
 
 .layer-3 {
@@ -54,14 +51,14 @@ body {
     animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: fixed;
+    background-position: center;
 }
 
 .layer-4 {
     background: url("../img/lay4.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: fixed;
+    background-position: center;
     animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
 }
 
@@ -70,7 +67,7 @@ body {
     animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.55s both;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: fixed;
+    background-position: center;
 }
 
 .layer-6 {
@@ -78,7 +75,7 @@ body {
     animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.75s both;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: fixed;
+    background-position: center;
 }
 
 .layer-7 {
@@ -86,7 +83,7 @@ body {
     animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.85s both;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: fixed;
+    background-position: center;
 }
 
 .layer-8 {
@@ -94,17 +91,18 @@ body {
     animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s both;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: fixed;
+    background-position: center;
 }
 
 .laya-please {
     background-attachment: fixed;
     position: absolute;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    height: 100em;
     width: 100%;
     top: 0;
     left: 0px;
@@ -159,6 +157,7 @@ body {
 
 h1 {
     z-index: 100;
+    color: #6b0000b9;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,8 +210,9 @@ h1 {
     }
 }
 
+
 * {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 
@@ -222,27 +222,24 @@ h1 {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 4px 4px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20px;
 }
 
 .column {
     flex: 50%;
     padding: 0 4px;
+    margin: auto;
+    width: fit-content;
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
-
-@media screen and (max-width: 500px) {
-    .column {
-        width: 100%;
-    }
-}
 
 .skill-img {
+    display: block;
     width: 50%;
+    margin: auto;
     height: 50%;
 }
 
@@ -257,28 +254,74 @@ h2 {
     text-transform: uppercase;
 }
 
+.head {
+    margin-left: -65%;
+    color: rgba(0, 0, 0, 0.781);
+}
 
 .img-container {
+    display: block;
     position: relative;
-    width: 50%;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: auto;
     max-width: 300px;
 }
 
+
 .img-overlay {
-    position: absolute;
+    text-align: center;
+    width: fit-content;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+    border-radius: 3px;
     background: rgb(255, 255, 255);
     color: #000000;
-    width: 50%;
-    font-family: 'Montserrat', sans-serif;
-    height: 25%;
-    transition: .5s ease-in;
+    transition: .5s ease;
     opacity: 0;
-    color: rgb(0, 0, 0);
-    font-size: 100%;
-    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 75%;
     text-align: center;
 }
 
+
 .img-container:hover .img-overlay {
     opacity: 1;
+}
+
+
+.skill-head{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 300%;
+    display: flex;
+    color: rgb(255, 219, 205);
+    flex-direction: column;
+    border: #000000;
+    text-shadow: 1.5px 1px 1px black;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.language{
+    margin-left: 17%;
+    margin-right: 17%;
+}
+
+.misc {
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+.prpro {
+    width: 500%;
+}
+
+.platform {
+    margin-left: 40%;
+    margin-right: 40%;
 }

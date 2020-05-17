@@ -1,10 +1,12 @@
 html {
     overflow-x: hidden;
+    background-attachment: fixed;
 }
 
 html,
 body {
     background-attachment: fixed;
+    background-position: fixed;
     padding: 0;
     margin: 0;
     height: 100%;
@@ -15,6 +17,7 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    position:absolute;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -30,52 +33,68 @@ body {
 }
 
 .layer-1 {
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    background-position: fixed;
+    height: 100%;
     width: 100%;
     background-color: #fed8c1;
 }
 
 .layer-2 {
-    background-attachment: fixed;
-    background: url("../img/lay2.svg") no-repeat center center fixed;
+    background: url("../img/lay2.svg");
     animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
 }
 
 .layer-3 {
-    background-attachment: fixed;
-    background: url("../img/lay3.svg") no-repeat center center fixed;
+    background: url("../img/lay3.svg");
     animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
 }
 
 .layer-4 {
+    background: url("../img/lay4.svg");
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background: url("../img/lay4.svg") no-repeat center center fixed;
+    background-position: fixed;
     animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
 }
 
 .layer-5 {
-    background-attachment: fixed;
-    background: url("../img/lay5.svg") no-repeat center center fixed;
+    background: url("../img/lay5.svg");
     animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.55s both;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
 }
 
 .layer-6 {
-    background-attachment: fixed;
-    background: url("../img/lay6.svg") no-repeat center center fixed;
+    background: url("../img/lay6.svg");
     animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.75s both;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
 }
 
 .layer-7 {
-    background-attachment: fixed;
-    background: url("../img/lay7.svg") no-repeat center center fixed;
+    background: url("../img/lay7.svg");
     animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.85s both;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
 }
 
 .layer-8 {
-    background-attachment: fixed;
-    background: url("../img/lay8.svg") no-repeat center center fixed;
+    background: url("../img/lay8.svg");
     animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s both;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
 }
 
 .laya-please {
@@ -206,7 +225,6 @@ h1 {
     padding: 0 4px;
 }
 
-/* Create two equal columns that sits next to each other */
 .column {
     flex: 50%;
     padding: 0 4px;

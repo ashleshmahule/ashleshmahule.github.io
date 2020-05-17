@@ -66,16 +66,40 @@ for (i = 0; i < elements.length; i++) {
 }
 
 
-$(document).ready(function () {
-  $('.Showcase').slick({
-    infinite: true,
-    dots: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    centerMode: true,
-    variableWidth: true,
-    adaptiveHeight: true,
-    nextArrow: `<button class="slick-next slick-arrow" aria-label="Next" type="button" ><i class="fas fa-arrow-right"></i></button>`,
-    prevArrow: `<button class="slick-prev slick-arrow" aria-label="Previous" type="button" ><i class="fas fa-arrow-left"></i></button>`
-  });
+$('.slider__offset').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: $(".arrow__left"),
+  nextArrow: $(".arrow__right"),
+  fade: false,
+  infinite: true,
+  autoplay: true,
+  pauseOnHover: true,
+  focusOnSelect: true,
+  centerPadding: 0,
+  slideMargin: 10,
+  centerPadding: 0,
+  responsive: [{
+      breakpoint: 1140,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 577,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
 });

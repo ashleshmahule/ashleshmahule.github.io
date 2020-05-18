@@ -102,7 +102,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 300em;
+    height: 198em;
     width: 100%;
     top: 0;
     left: 0px;
@@ -241,6 +241,13 @@ h1 {
     height: 50%;
 }
 
+.skill-img:hover {
+    height: 52%;
+    width: 52%;
+    border-radius: 2%;
+    border: #0000008c;
+}
+
 h2 {
     font-size: 50px;
     z-index: 100;
@@ -313,28 +320,28 @@ h2 {
 }
 
 .language {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .misc {
-    margin-left: 32%;
-    margin-right: 32%;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 .platform {
-    margin-left: 33%;
-    margin-right: 33%;
+    margin-left: 40%;
+    margin-right: 40%;
 }
 
 .web {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 27%;
+    margin-right: 27%;
 }
 
 .dbAndCloud {
-    margin-left: 33%;
-    margin-right: 33%;
+    margin-left: 40%;
+    margin-right: 40%;
 }
 
 .contact {
@@ -354,7 +361,7 @@ h2 {
     width: 22%;
 }
 
-h3{
+h3 {
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
     margin: auto;
@@ -467,8 +474,8 @@ a:hover {
 
 .ul__list {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 1%;
+    margin: 1%;
 }
 
 .sosmed__list li a {
@@ -532,7 +539,7 @@ a:hover {
 }
 
 .bg__grub--slider {
-    background-color: #d0d0d026;
+    background-color: #ffffff65;
     border-radius: 20px;
 }
 
@@ -555,4 +562,76 @@ a:hover {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+.project-container {
+    position: relative;
+}
+
+.project-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.project-description {
+    transition: .5s ease !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    width: auto;
+    top: 40% !important;
+    left: 40% !important;
+    transform: translate(-40%, -40%) !important;
+    -ms-transform: translate(-40%, -40%) !important;
+    text-align: center !important;
+}
+
+.project-link {
+    transition: .5s ease !important;
+    opacity: 0 !important;
+    background-color: #e6e6e6b0;
+}
+
+.project-container:hover .project-image {
+    opacity: 0.3 !important;
+}
+
+.project-container:hover .project-description {
+    opacity: 1 !important;
+}
+
+.project-container:hover .project-link {
+    opacity: 1 !important;
+}
+
+.text {
+    background-color: rgba(201, 119, 43, 0);
+    color: white;
+    font-size: 14px;
+}
+
+
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40%;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#scrollBtn:hover {
+    background-color: #555;
 }

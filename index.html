@@ -14,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.min.js"></script>
     <link rel="stylesheet" href="assets/css/index.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 
@@ -37,24 +38,40 @@
         </div>
 
 
-        <div class="main-container">
-            <h1 style=" margin-top:10%; display: flex; font-weight: bold;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 100px;
-            text-transform: uppercase;">Hi! I'm Ashlesh Mahule</h1>
+        <div class="main-container smooth-scroll">
+
+            <h1
+                style=" margin-top:8%; margin-right: 5%; display: flex; font-weight: bold; flex-direction: column; justify-content: center; text-align: right;  font-family: 'Montserrat', sans-serif; font-size: 100px; text-transform: uppercase;">
+                Hi!<br>I'm Ashlesh Mahule
+            </h1>
+            <p style="margin-right: 5%; text-align: right; font-size: 20px; color: blanchedalmond;">You've reached a
+                Computer Science Engineer in the making.
+                <br>
+                I am a hardworking person and a passionate learner<br>I love making web/mobile applications and developing
+                machine learning models<br>I also have a strong understanding of full-stack development<br>
+                I am a tech enthusiast and beleive in making softwares which solve real world problems
+                <br><br>
+                Currently seeking internship opportunities this Summer.
+            </p>
+
+            <div style="display: flex; justify-content: center; margin-top: 3%;">
+                <a id="scrollDown" href="#project"><img style="width: 35px; height: 20px;"
+                        src="assets/img/scrollDown.png"></a>
+            </div>
 
 
-            <div class="projects" style="margin-top: 28%;">
+            <button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+            <div id="project" class="projects" style="margin-top: 28%;">
                 <section class="overflow-hidden position-relative">
                     <div class="container">
                         <div class="bg__grub--slider p-3">
                             <div class="row pt-5 pb-5 pl-4">
-                                <div style="font-size: 25px;" class="col-md-5 col-lg-4 pb-5 text-center text-md-left pb-md-0 my-auto">
+                                <div style="font-size: 30px;"
+                                    class="col-md-5 col-lg-4 pb-5 text-center text-md-left pb-md-0 my-auto">
                                     <h3 class="sans-bold mb-3">My Projects</h3>
-                                    <p>These are some of the projects on which I have worked on.<br>Feel free to take a
+                                    <p style="font-size: 20px;">These are some of the projects on which I have worked
+                                        on.<br>Feel free to take a
                                         look at them.</p>
 
                                     <ul class="ul__list--inline slider__arrow">
@@ -69,20 +86,97 @@
                                 <div class="col-md-7 col-lg-8 my-auto">
 
                                     <ul class="ul__list--inline slider__offset">
-                                        <li class="pl-3 pr-3 images__slider no__outline">
-                                            <img src="assets/img/kali.png" alt="">
+                                        <li style="margin: auto;" class="pl-3 pr-3 images__slider no__outline">
+                                            <div class="project-container">
+                                                <img class="project-image" src="assets/img/landmark-recognition.png"
+                                                    alt="">
+                                                <div class="project-description">
+                                                    <h4 style="font-weight: bold;">Landmark Recognition</h4>
+                                                    <div class="text">
+                                                        An Android app through which user can identify a landmark and
+                                                        aslo view other landmarks in it's vicinity
+                                                    </div>
+
+                                                </div>
+                                                <a style="margin: auto; font-size: 15px;"
+                                                    class="project-link btn btn-default" role="button"
+                                                    href="https://github.com/ashleshmahule/Landmark-Recognition">View on
+                                                    Github
+                                                </a>
+                                                <a style="margin: auto; font-size: 15px;"
+                                                    class="project-link btn btn-default" role="button"
+                                                    href="https://drive.google.com/file/d/10P4I-VunvprOORFTGr6-swUBRtLGdTXf/view?usp=sharing"
+                                                    download>
+                                                    Download APK
+                                                </a>
+                                            </div>
                                         </li>
-                                        <li class="pl-3 pr-3 images__slider no__outline">
-                                            <img src="assets/img/kali.png"
-                                                alt="">
+                                        <li style="margin: auto;" class="pl-3 pr-3 images__slider no__outline">
+                                            <div class="project-container">
+                                                <img class="project-image" src="assets/img/verve.png" alt="">
+                                                <div class="project-description">
+                                                    <h4 style="font-weight: bold;">Verve</h4>
+                                                    <div class="text">
+                                                        A P5JS project in which user can visualise various line clipping
+                                                        algorithms.
+                                                    </div>
+
+                                                </div>
+                                                <a style="margin: auto; font-size: 15px;"
+                                                    class="project-link btn btn-default" role="button"
+                                                    href="https://github.com/JigyasuPrakash/verve">View on Github
+                                                </a>
+                                                <a style="margin: auto; font-size: 15px;"
+                                                    class="project-link btn btn-default" role="button"
+                                                    href="https://projects.itsjigyasu.me/verve/">
+                                                    View Live Project
+                                                </a>
+                                            </div>
                                         </li>
-                                        <li class="pl-3 pr-3 images__slider no__outline">
-                                            <img src="assets/img/kali.png"
-                                                alt="">
+
+                                        <li style="margin: auto;" class="pl-3 pr-3 images__slider no__outline">
+                                            <div class="project-container">
+                                                <img class="project-image" src="assets/img/twittersa.png" alt="">
+                                                <div class="project-description">
+                                                    <h4 style="font-weight: bold;">Twitter Sentiment Analysis</h4>
+                                                    <div class="text">
+                                                        TSA wich shows trending tags and is with rumor detection also!.
+                                                    </div>
+
+                                                </div>
+                                                <a style="margin: auto; font-size: 15px;"
+                                                    class="project-link btn btn-default" role="button"
+                                                    href="https://github.com/TheWitchers3/Sentimento">View on Github
+                                                </a>
+                                                <a style="margin: auto; font-size: 15px;"
+                                                    class="project-link btn btn-default" role="button"
+                                                    href="https://twittersentimentanalysisfront.herokuapp.com/">
+                                                    View Live Project
+                                                </a>
+                                            </div>
                                         </li>
-                                        <li class="pl-3 pr-3 images__slider no__outline">
-                                            <img src="assets/img/kali.png"
-                                                alt="">
+                                        <li style="margin: auto;" class="pl-3 pr-3 images__slider no__outline">
+                                            <div class="project-container">
+                                                <img class="project-image" src="assets/img/pacmanai.png" alt="">
+                                                <div class="project-description">
+                                                    <h4 style="font-weight: bold;">Pacman AI</h4>
+                                                    <div class="text">
+                                                        A P5 JS project in which Pacman automatically solves the
+                                                        maze using best first search method.
+                                                    </div>
+
+                                                </div>
+                                                <a style="margin: auto; font-size: 15px;"
+                                                    class="project-link btn btn-default" role="button"
+                                                    href="https://github.com/nikhildsahu/PacmanAI">View on Github
+                                                </a>
+                                                <a style="margin: auto; font-size: 15px;"
+                                                    class="project-link btn btn-default" role="button"
+                                                    href="https://nikhilsahu.me/PacmanAI/">
+                                                    View Live Project
+                                                </a>
+                                            </div>
+
                                         </li>
                                     </ul>
 
@@ -99,10 +193,10 @@
             </h2>
 
             <div class="skills">
-                <div class="language">
+                <div>
                     <h3 class="skill-head" style="font-weight: bold; font-family: 'Montserrat', sans-serif;
-                    text-transform: capitalize;">Languages</h3>
-                    <div class="row">
+                    text-transform: capitalize; font-size: 35px; margin-bottom: 1%;">Languages</h3>
+                    <div class="row  language">
                         <div class="column">
                             <div class="img-container">
                                 <img class="skill-img" src="assets/img/c.png">
@@ -136,10 +230,10 @@
                     </div>
                 </div>
 
-                <div class="web">
+                <div>
                     <h3 class="skill-head" style="font-weight: bold; font-family: 'Montserrat', sans-serif;
-                    text-transform: capitalize;">Web</h3>
-                    <div class="row">
+                    text-transform: capitalize; font-size: 35px; margin-bottom: 1%;">Web</h3>
+                    <div class="row web">
                         <div class="column">
                             <div class="img-container">
                                 <img class="skill-img" src="assets/img/html.png">
@@ -166,6 +260,12 @@
                         </div>
                         <div class="column">
                             <div class="img-container">
+                                <img class="skill-img" src="assets/img/flask.png">
+                                <div class="img-overlay">Flask</div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="img-container">
                                 <img class="skill-img" src="assets/img/react.png">
                                 <div class="img-overlay">React JS</div>
                             </div>
@@ -173,10 +273,10 @@
                     </div>
                 </div>
 
-                <div class="dbAndCloud">
+                <div>
                     <h3 class="skill-head" style="font-weight: bold; font-family: 'Montserrat', sans-serif;
-                    text-transform: capitalize;">Database And Cloud</h3>
-                    <div class="row">
+                    text-transform: capitalize; font-size: 35px; margin-bottom: 1%;">Database And Cloud</h3>
+                    <div class="row dbAndCloud">
                         <div class="column">
                             <div class="img-container">
                                 <img class="skill-img" src="assets/img/firebase.png">
@@ -186,7 +286,7 @@
                         <div class="column prpro">
                             <div class="img-container">
                                 <img class="skill-img" src="assets/img/mongodb.png">
-                                <div class="img-overlay">mongodb</div>
+                                <div class="img-overlay">MongoDB</div>
                             </div>
                         </div>
                         <div class="column">
@@ -198,34 +298,35 @@
                     </div>
                 </div>
 
-                <div class="misc">
+                <div>
                     <h3 class="skill-head" style="font-weight: bold; font-family: 'Montserrat', sans-serif;
-                    text-transform: capitalize;">Miscellaneous</h3>
-                    <div class="row">
+                    text-transform: capitalize; font-size: 35px; margin-bottom: 1%;">Miscellaneous</h3>
+                    <div class="row misc">
                         <div class="column">
                             <div class="img-container">
-                                <img class="skill-img" src="assets/img/xd.png">
+                                <img class="skill-img" style="width: 40%; height: 40%;" src="assets/img/xd.png">
                                 <div class="img-overlay">Adobe XD</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="img-container">
-                                <img class="skill-img" src="assets/img/premierepro.png">
+                                <img class="skill-img" style="width: 35%; height: 35%;"
+                                    src="assets/img/premierepro.png">
                                 <div class="img-overlay">Adobe Premiere Pro</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="img-container">
-                                <img class="skill-img" src="assets/img/photoshop.png">
+                                <img class="skill-img" style="width: 35%; height: 35%;" src="assets/img/photoshop.png">
                                 <div class="img-overlay">Adobe Photoshop</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="platform">
+                <div>
                     <h3 class="skill-head" style="font-weight: bold; font-family: 'Montserrat', sans-serif;
-                    text-transform: capitalize;">Platforms</h3>
-                    <div class="row">
+                    text-transform: capitalize; font-size: 35px; margin-bottom: 1%;">Platforms</h3>
+                    <div class="row platform">
                         <div class="column">
                             <div class="img-container">
                                 <img class="skill-img" src="assets/img/window.png">
@@ -248,8 +349,14 @@
                 </div>
             </div>
 
+            <div style="display: flex; justify-content: center; ">
+                <a style="text-align: center; font-family: 'Montserrat', sans-serif;"
+                    href="https://drive.google.com/file/d/1DN9qs6mLyt1UP_Ocp0tzpDE47UIujEPE/view?usp=sharing"
+                    class="btn btn-success">View My Resume</a>
+            </div>
+
             <footer>
-                <h2 class="contact-head" style="font-size: 35px; font-weight: bold; font-family: 'Montserrat', sans-serif;
+                <h2 class="contact-head" style="margin-top: 15%; margin-bottom: 3%; font-size: 35px; font-weight: bold; font-family: 'Montserrat', sans-serif;
             text-transform: capitalize;">Get in Touch!</h2>
                 <div class="contact">
                     <div class="row">
@@ -297,7 +404,7 @@
                 </div>
             </footer>
         </div>
-        
+
 
 
     </div>

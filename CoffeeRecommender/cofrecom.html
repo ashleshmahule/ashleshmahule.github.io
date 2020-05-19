@@ -88,6 +88,22 @@
             background-color: DodgerBlue !important;
             color: #ffffff;
         }
+
+        .find {
+            background-color: #7e3200 !important;
+            color: #f1f1f1;
+            border-radius: 5px;
+            border: 1px #000000;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            padding: 2%;
+        }
+
+        .find:hover {
+            opacity: 90%;
+        }
     </style>
 
 
@@ -95,7 +111,7 @@
 
 <body style="background-image: url('https://ashleshmahule.github.io/CoffeeRecommender/assets/img/bg.jpg');">
 
-     <nav class="navbar navbar-light navbar-expand-lg bg-dark d-xl-flex align-items-center align-content-center align-items-xl-start py-lg-4"
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark d-xl-flex align-items-center align-content-center align-items-xl-start py-lg-4"
         id="mainNav">
         <div class="container"><a class="navbar-brand text-uppercase d-lg-none bounce animated text-expanded"
                 href="#">Le
@@ -104,10 +120,14 @@
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav mx-auto" style="color: aliceblue;">
-                    <li class="nav-item" role="presentation"><a style="color: aliceblue;" class="nav-link active" href="https://ashleshmahule.github.io/CoffeeRecommender/index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a style="color: aliceblue;" class="nav-link" href="https://ashleshmahule.github.io/CoffeeRecommender/about.html">About us</a></li>
-                    <li class="nav-item" role="presentation"><a style="color: aliceblue;" class="nav-link" href="https://ashleshmahule.github.io/CoffeeRecommender/products.html">Products</a></li>
-                    <li class="nav-item" role="presentation"><a style="color: aliceblue;" class="nav-link" href="https://ashleshmahule.github.io/CoffeeRecommender/store.html">Store</a></li>
+                    <li class="nav-item" role="presentation"><a style="color: aliceblue;" class="nav-link active"
+                            href="https://ashleshmahule.github.io/CoffeeRecommender/index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a style="color: aliceblue;" class="nav-link"
+                            href="https://ashleshmahule.github.io/CoffeeRecommender/about.html">About us</a></li>
+                    <li class="nav-item" role="presentation"><a style="color: aliceblue;" class="nav-link"
+                            href="https://ashleshmahule.github.io/CoffeeRecommender/products.html">Products</a></li>
+                    <li class="nav-item" role="presentation"><a style="color: aliceblue;" class="nav-link"
+                            href="https://ashleshmahule.github.io/CoffeeRecommender/store.html">Store</a></li>
                     <li class="nav-item" role="presentation"><a style="color: aliceblue;" class="nav-link"
                             href="http://ashleshmahule.pythonanywhere.com/ ">Coffee Recommender</a></li>
                 </ul>
@@ -135,12 +155,13 @@
             <input style="background-color: rgb(253, 235, 211) !important; text-decoration: none !important;"
                 type="text" name="ing4" placeholder="Rating (1-5)" required="required">
         </div>
-        <button type="submit" class="btn btn-primary btn-block btn-large">Find Your New Love</button>
+        <button type="submit" class="find">Find Your New Love</button>
     </form>
 
     <br>
     <br>
-    <div style="margin-top: 18%; margin-left: 30%; margin-right: 30%; font-size: 150%; font-family: 'Montserrat'; color:#ffffffef;">
+    <div
+        style="margin-top: 18%; margin-left: 30%; margin-right: 30%; font-size: 150%; font-family: 'Montserrat'; color:#ffffffef;">
         {{ prediction_text }}
     </div>
 

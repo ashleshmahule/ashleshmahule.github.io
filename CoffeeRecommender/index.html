@@ -47,6 +47,52 @@
 </head>
 
 
+<div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+</div>
+
+<script>
+    ;
+    (function () {
+        function id(v) {
+            return document.getElementById(v);
+        }
+
+        function loadbar() {
+            var ovrl = id("overlay"),
+                prog = id("progress"),
+                stat = id("progstat"),
+                img = document.images,
+                c = 0,
+                tot = img.length;
+            if (tot == 0) return doneLoading();
+
+            function imgLoaded() {
+                c += 1;
+                var perc = ((100 / tot * c) << 0) + "%";
+                prog.style.width = perc;
+                stat.innerHTML = "Loading " + perc;
+                if (c === tot) return doneLoading();
+            }
+
+            function doneLoading() {
+                ovrl.style.opacity = 0;
+                setTimeout(function () {
+                    ovrl.style.display = "none";
+                }, 1200);
+            }
+            for (var i = 0; i < tot; i++) {
+                var tImg = new Image();
+                tImg.onload = imgLoaded;
+                tImg.onerror = imgLoaded;
+                tImg.src = img[i].src;
+            }
+        }
+        document.addEventListener('DOMContentLoaded', loadbar, false);
+    }());
+</script>
+
 
 <body style="background:linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('assets/img/bg.jpg');">
     <nav class="navbar navbar-light navbar-expand-lg bg-dark d-xl-flex align-items-center align-content-center align-items-xl-start py-lg-4"
@@ -68,51 +114,7 @@
         </div>
     </nav>
 
-    <div id="overlay">
-        <div id="progstat"></div>
-        <div id="progress"></div>
-    </div>
 
-    <script>
-        ;
-        (function () {
-            function id(v) {
-                return document.getElementById(v);
-            }
-
-            function loadbar() {
-                var ovrl = id("overlay"),
-                    prog = id("progress"),
-                    stat = id("progstat"),
-                    img = document.images,
-                    c = 0,
-                    tot = img.length;
-                if (tot == 0) return doneLoading();
-
-                function imgLoaded() {
-                    c += 1;
-                    var perc = ((100 / tot * c) << 0) + "%";
-                    prog.style.width = perc;
-                    stat.innerHTML = "Loading " + perc;
-                    if (c === tot) return doneLoading();
-                }
-
-                function doneLoading() {
-                    ovrl.style.opacity = 0;
-                    setTimeout(function () {
-                        ovrl.style.display = "none";
-                    }, 1200);
-                }
-                for (var i = 0; i < tot; i++) {
-                    var tImg = new Image();
-                    tImg.onload = imgLoaded;
-                    tImg.onerror = imgLoaded;
-                    tImg.src = img[i].src;
-                }
-            }
-            document.addEventListener('DOMContentLoaded', loadbar, false);
-        }());
-    </script>
 
     <div>
         <div id="box-2" style="background-image: url(assets/img/home.png);"><a href="#"></a></div>

@@ -236,14 +236,14 @@ h1 {
 
 .skill-img {
     display: block;
-    width:75%;
-    height: 75%;
+    width: 65%;
+    height: 65%;
     margin: auto;
 }
 
 .skill-img:hover {
-    height: 52%;
-    width: 52%;
+    height: 67%;
+    width: 67%;
     border-radius: 2%;
     border: #0000008c;
 }
@@ -382,26 +382,6 @@ a {
 
 a:hover {
     text-decoration: none;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/SourceSansPro-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/SourceSansPro-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/SourceSansPro-SemiBold.ttf');
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/SourceSansPro-Black.ttf');
 }
 
 .sans-bold {
@@ -635,4 +615,3 @@ a:hover {
 #scrollBtn:hover {
     background-color: #555;
 }
-

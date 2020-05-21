@@ -250,6 +250,20 @@ h1 {
     border: #0000008c;
 }
 
+@media screen and (max-width: 768px) {
+    .skill-img {
+        width: 20%;
+        height: 20%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skill-img {
+        width: 20%;
+        height: 20%;
+    }
+}
+
 h2 {
     font-size: 50px;
     z-index: 100;

@@ -245,8 +245,8 @@ h1 {
 
 @media screen and (max-width: 768px) {
     .skill-img {
-        width: 15%;
-        height: 15%;
+        width: 10%;
+        height: 10%;
     }
 }
 
@@ -266,8 +266,8 @@ h1 {
 
 @media screen and (max-width: 768px) {
     .skill-img:hover {
-        width: 16%;
-        height: 16%;
+        width: 11%;
+        height: 11%;
     }
 }
 
@@ -284,30 +284,16 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-    .plat {
-        width: 15%;
-        height: 15%;
+    .plat:hover {
+        width: 11%;
+        height: 11%;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .plat {
-        width: 9%;
-        height: 9%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .plat:hover {
-        width: 16%;
-        height: 16%;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .plat:hover {
-        width: 10%;
-        height: 10%;
+    .skill-img:hover {
+        width: 11%;
+        height: 11%;
     }
 }
 

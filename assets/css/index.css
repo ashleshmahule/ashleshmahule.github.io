@@ -243,58 +243,12 @@ h1 {
     margin: auto;
 }
 
-@media screen and (max-width: 768px) {
-    .skill-img {
-        width: 10%;
-        height: 10%;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .skill-img {
-        width: 10%;
-        height: 10%;
-    }
-}
 
 .skill-img:hover {
     height: 67%;
     width: 67%;
     border-radius: 2%;
     border: #0000008c;
-}
-
-@media screen and (max-width: 768px) {
-    .skill-img:hover {
-        width: 11%;
-        height: 11%;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .skill-img:hover {
-        width: 11%;
-        height: 11%;
-    }
-}
-
-.plat {
-    height: 50% !important;
-    width: 50% !important;
-}
-
-@media screen and (max-width: 768px) {
-    .plat:hover {
-        width: 11%;
-        height: 11%;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .skill-img:hover {
-        width: 11%;
-        height: 11%;
-    }
 }
 
 

@@ -243,6 +243,20 @@ h1 {
     margin: auto;
 }
 
+@media screen and (max-width: 768px) {
+    .skill-img {
+        width: 10%;
+        height: 10%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skill-img {
+        width: 10%;
+        height: 10%;
+    }
+}
+
 .skill-img:hover {
     height: 67%;
     width: 67%;
@@ -251,18 +265,20 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-    .skill-img {
-        width: 18%;
-        height: 18%;
+    .skill-img:hover {
+        width: 11%;
+        height: 11%;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .skill-img {
-        width: 20%;
-        height: 20%;
+    .skill-img:hover {
+        width: 11%;
+        height: 11%;
     }
 }
+
+
 
 h2 {
     font-size: 50px;

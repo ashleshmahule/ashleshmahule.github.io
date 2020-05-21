@@ -1,6 +1,7 @@
 html {
     overflow-x: hidden;
     background-attachment: fixed;
+    scroll-behavior: smooth;
 }
 
 html,
@@ -11,6 +12,7 @@ body {
     margin: 0;
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 .totalcontainer {
@@ -482,7 +484,6 @@ a:hover {
     transform: translate(-50%, -50%);
 }
 
-/* slider */
 .images__slider img {
     object-fit: cover;
     width: 300px;
@@ -519,7 +520,7 @@ a:hover {
 }
 
 .bg__grub--slider {
-    background-color: #ffffff65;
+    background-color: #ebebeb86;
     border-radius: 20px;
 }
 
@@ -549,6 +550,8 @@ a:hover {
     position: relative;
 }
 
+
+
 .project-image {
     opacity: 1;
     display: block;
@@ -569,6 +572,30 @@ a:hover {
     transform: translate(-40%, -40%) !important;
     -ms-transform: translate(-40%, -40%) !important;
     text-align: center !important;
+}
+
+@media screen and (max-width: 768px) {
+    .project-container {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project-container {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-description {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project-description {
+        width: 280px;
+    }
 }
 
 .project-link {

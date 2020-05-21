@@ -278,6 +278,39 @@ h1 {
     }
 }
 
+.plat {
+    height: 50% !important;
+    width: 50% !important;
+}
+
+@media screen and (max-width: 768px) {
+    .plat {
+        width: 9%;
+        height: 9%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .plat {
+        width: 9%;
+        height: 9%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .plat:hover {
+        width: 10%;
+        height: 10%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .plat:hover {
+        width: 10%;
+        height: 10%;
+    }
+}
+
 
 
 h2 {

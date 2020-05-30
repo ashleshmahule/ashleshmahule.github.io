@@ -645,3 +645,19 @@ a:hover {
 #scrollBtn:hover {
     background-color: #555;
 }
+
+::-webkit-scrollbar {
+    width: 0.5%;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(230, 92, 0, 0.89);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c4002bcc;
+}

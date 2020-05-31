@@ -104,7 +104,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 175em;
+    height: 185vw;
     width: 100%;
     top: 0;
     left: 0px;
@@ -171,49 +171,6 @@ h1 {
 
 * {
     box-sizing: border-box;
-}
-
-
-
-@mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
-    &:after {
-        position: absolute;
-        content: "";
-        top: $y;
-        left: $x;
-        right: 0;
-        z-index: -1;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
-        transform: scale($size);
-        -webkit-filter: blur($spread);
-        -moz-filter: blur($spread);
-        -ms-filter: blur($spread);
-        filter: blur($spread);
-        background: linear-gradient(270deg, $colorA, $colorB);
-        background-size: 200% 200%;
-        animation: animateGlow $duration ease infinite;
-
-        @keyframes animateGlow {
-            0% {
-                background-position: 0% 50%
-            }
-
-            50% {
-                background-position: 100% 50%
-            }
-
-            100% {
-                background-position: 0% 50%
-            }
-        }
-    }
-}
-
-
-* {
-    box-sizing: border-box
 }
 
 
@@ -300,6 +257,8 @@ h2 {
     text-align: center;
     white-space: nowrap;
 }
+
+
 
 .conOverlay {
     background: rgba(156, 242, 253, 0.733);
@@ -593,11 +552,47 @@ a:hover {
     .project-description {
         width: 350px;
     }
+
+    .project-image {
+        width: 75%;
+    }
+
+    .head {
+        margin-left: -50%;
+    }
+
+    .skill-img {
+        height: 45%;
+        width: 45%;
+    }
+
+    .skill-img:hover {
+        height: 47%;
+        width: 47%;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .project-description {
         width: 280px;
+    }
+
+    .project-image {
+        width: 50%;
+    }
+
+    .head {
+        margin-left: -40%;
+    }
+
+    .skill-img {
+        height: 35%;
+        width: 35%;
+    }
+
+    .skill-img:hover {
+        height: 37%;
+        width: 37%;
     }
 }
 

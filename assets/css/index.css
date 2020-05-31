@@ -104,7 +104,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 185vw;
+    height: 190vw;
     width: 100%;
     top: 0;
     left: 0px;
@@ -158,20 +158,20 @@ body {
 }
 
 h1 {
-    z-index: 100;
     color: #6b0000b9;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 100px;
+    font-size: 7vw !important;
     text-transform: uppercase;
 }
 
 * {
     box-sizing: border-box;
 }
+
 
 
 .projects {}
@@ -195,15 +195,15 @@ h1 {
 
 .skill-img {
     display: block;
-    width: 65%;
-    height: 65%;
+    width: 3vw !important;
+    height: 3.12vw !important;
     margin: auto;
 }
 
 
 .skill-img:hover {
-    height: 67%;
-    width: 67%;
+    width: 3.1vw !important;
+    height: 3.22vw !important;
     border-radius: 2%;
     border: #0000008c;
 }
@@ -211,7 +211,7 @@ h1 {
 
 
 h2 {
-    font-size: 50px;
+    font-size: 4vw !important;
     z-index: 100;
     display: flex;
     margin: auto;
@@ -223,7 +223,7 @@ h2 {
 }
 
 .head {
-    margin-left: -65%;
+    margin-left: -60vw !important;
     color: rgba(0, 0, 0, 0.781);
 }
 
@@ -258,8 +258,6 @@ h2 {
     white-space: nowrap;
 }
 
-
-
 .conOverlay {
     background: rgba(156, 242, 253, 0.733);
 }
@@ -272,7 +270,7 @@ h2 {
 
 .skill-head {
     font-family: 'Montserrat', sans-serif;
-    font-size: 300%;
+    font-size: 2.5vw !important;
     display: flex;
     color: rgb(255, 219, 205);
     flex-direction: column;
@@ -283,47 +281,11 @@ h2 {
     text-transform: capitalize;
 }
 
-.language {
-    margin-left: 30%;
-    margin-right: 30%;
-}
-
-.misc {
-    margin-left: 35%;
-    margin-right: 35%;
-}
-
-.platform {
-    margin-left: 40%;
-    margin-right: 40%;
-}
-
-.web {
-    margin-left: 27%;
-    margin-right: 27%;
-}
-
-.dbAndCloud {
-    margin-left: 40%;
-    margin-right: 40%;
-}
-
-.contact {
-    margin-left: 27%;
-    margin-right: 27%;
-}
 
 .contact-head {
     color: azure;
 }
 
-.whatsappCol {
-    width: 22%;
-}
-
-.linkedinCol {
-    width: 22%;
-}
 
 h3 {
     font-family: 'Montserrat', sans-serif;
@@ -448,42 +410,42 @@ a:hover {
 
 .images__slider img {
     object-fit: cover;
-    width: 300px;
-    height: 400px;
+    width: 300px !important;
+    height: 400px !important;
 }
 
 @media screen and (max-width: 768px) {
     .images__slider img {
-        width: 350px;
+        width: 350px !important;
     }
 }
 
 @media screen and (max-width: 576px) {
     .images__slider img {
-        width: 280px;
+        width: 280px !important;
         margin: 0 auto;
     }
 }
 
 .slider__offset {
-    width: 1000px;
+    width: 1000px !important;
 }
 
 @media screen and (max-width: 1024px) {
     .slider__offset {
-        width: 800px;
+        width: 800px !important;
     }
 }
 
 @media screen and (max-width: 576px) {
     .slider__offset {
-        width: 100%;
+        width: 100% !important;
     }
 }
 
 .bg__grub--slider {
     background-color: #ebebeb86;
-    border-radius: 20px;
+    border-radius: 18px;
 }
 
 .slider__arrow li {
@@ -517,7 +479,7 @@ a:hover {
 .project-image {
     opacity: 1;
     display: block;
-    width: 100%;
+    width: 4vw !important;
     height: auto;
     border-radius: 10px;
     transition: .5s ease;
@@ -552,47 +514,11 @@ a:hover {
     .project-description {
         width: 350px;
     }
-
-    .project-image {
-        width: 75%;
-    }
-
-    .head {
-        margin-left: -50%;
-    }
-
-    .skill-img {
-        height: 45%;
-        width: 45%;
-    }
-
-    .skill-img:hover {
-        height: 47%;
-        width: 47%;
-    }
 }
 
 @media screen and (max-width: 576px) {
     .project-description {
         width: 280px;
-    }
-
-    .project-image {
-        width: 50%;
-    }
-
-    .head {
-        margin-left: -40%;
-    }
-
-    .skill-img {
-        height: 35%;
-        width: 35%;
-    }
-
-    .skill-img:hover {
-        height: 37%;
-        width: 37%;
     }
 }
 
@@ -600,6 +526,8 @@ a:hover {
     transition: .5s ease !important;
     opacity: 0 !important;
     background-color: #e6e6e6b0;
+    width: fit-content;
+    margin: auto;
 }
 
 .project-container:hover .project-image {

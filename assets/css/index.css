@@ -195,15 +195,15 @@ h1 {
 
 .skill-img {
     display: block;
-    width: 3vw !important;
-    height: 3.12vw !important;
+    width: 48px !important;
+    height: 50px !important;
     margin: auto;
 }
 
 
 .skill-img:hover {
-    width: 3.1vw !important;
-    height: 3.22vw !important;
+    width: 50px !important;
+    height: 52px !important;
     border-radius: 2%;
     border: #0000008c;
 }

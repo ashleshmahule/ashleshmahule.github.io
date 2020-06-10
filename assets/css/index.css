@@ -254,7 +254,6 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 75%;
-    text-align: center;
     white-space: nowrap;
 }
 
@@ -584,3 +583,33 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: #c4002bcc;
 }
+
+
+@media (max-width: 575.98px) {
+    .project-image {
+        opacity: 1;
+        display: block;
+        width: 3vw !important;
+        height: auto;
+        border-radius: 10px;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .laya-please {
+        background-attachment: fixed;
+        position: absolute;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 270vh;
+        width: 100%;
+        top: 0;
+        left: 0px;
+    }
+    
+}
+
+@media (max-width: 767.98px) {}

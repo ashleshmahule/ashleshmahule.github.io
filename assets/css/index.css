@@ -596,6 +596,18 @@ a:hover {
         backface-visibility: hidden;
     }
 
+    .project-description {
+        transition: .5s ease !important;
+        opacity: 0 !important;
+        position: absolute !important;
+        width: auto;
+        top: 40% !important;
+        left: 40% !important;
+        transform: translate(-40%, -40%) !important;
+        -ms-transform: translate(-40%, -40%) !important;
+        text-align: center !important;
+    }
+
     .laya-please {
         background-attachment: fixed;
         position: absolute;
@@ -621,7 +633,7 @@ a:hover {
 
     .desc {
         text-align: right;
-        font-size: 25px !important;
+        font-size: 15px !important;
         color: blanchedalmond;
     }
 
@@ -640,6 +652,35 @@ a:hover {
         border: #0000008c;
     }
     
+    .img-container {
+        display: block;
+        position: relative;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: auto;
+        max-width: 300px;
+    }
+    
+    
+    .img-overlay {
+        text-align: center;
+        width: fit-content;
+        height: auto;
+        margin-top: 5%;
+        padding: 5px;
+        position: relative;
+        bottom: 0;
+        border-radius: 3px;
+        background: rgb(255, 255, 255);
+        color: #000000;
+        transition: .5s ease;
+        opacity: 0;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 10px;
+        white-space: nowrap;
+        display: inline-block;
+    }
 }
 
 @media (max-width: 767.98px) {}

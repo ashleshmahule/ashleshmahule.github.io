@@ -208,7 +208,9 @@ h1 {
     border: #0000008c;
 }
 
-
+.firebase {
+    width: 40px !important;
+}
 
 h2 {
     font-size: 4vw !important;
@@ -680,6 +682,10 @@ a:hover {
         font-size: 10px;
         white-space: nowrap;
         display: inline-block;
+    }
+
+    .firebase {
+        width: 20px;
     }
 }
 

@@ -591,7 +591,7 @@ a:hover {
     .project-image {
         opacity: 1;
         display: block;
-        width: 150px !important;
+        width: 50px !important;
         height: auto;
         border-radius: 10px;
         transition: .5s ease;
@@ -618,7 +618,7 @@ a:hover {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        height: 420vh !important;
+        height: 400vh !important;
         width: 100%;
         top: 0;
         left: 0px;
@@ -641,15 +641,15 @@ a:hover {
 
     .skill-img {
         display: block;
-        width: 28px !important;
-        height: 30px !important;
-        margin: auto;
+        width: 26px !important;
+        height: 28px !important;
+        margin: 3px;
     }
     
     
     .skill-img:hover {
-        width: 20px !important;
-        height: 22px !important;
+        width: 28px !important;
+        height: 30px !important;
         border-radius: 2%;
         border: #0000008c;
     }

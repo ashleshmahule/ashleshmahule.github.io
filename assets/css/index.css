@@ -104,7 +104,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 190vw;
+    height: 194vw;
     width: 100%;
     top: 0;
     left: 0px;
@@ -618,7 +618,7 @@ a:hover {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        height: 480vh !important;
+        height: 420vh !important;
         width: 100%;
         top: 0;
         left: 0px;

@@ -624,6 +624,22 @@ a:hover {
         font-size: 25px !important;
         color: blanchedalmond;
     }
+
+    .skill-img {
+        display: block;
+        width: 28px !important;
+        height: 30px !important;
+        margin: auto;
+    }
+    
+    
+    .skill-img:hover {
+        width: 20px !important;
+        height: 22px !important;
+        border-radius: 2%;
+        border: #0000008c;
+    }
+    
 }
 
 @media (max-width: 767.98px) {}
